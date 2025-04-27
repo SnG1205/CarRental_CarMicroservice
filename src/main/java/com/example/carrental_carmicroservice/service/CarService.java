@@ -26,8 +26,8 @@ public class CarService {
         return carRepository.save(car);
     }
 
-    public Car addCar(Car car) {
-        return carRepository.save(car);
+    public void delete(Car car) {
+        carRepository.delete(car);
     }
 
     public List<Car> getAllCars() {
